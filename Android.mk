@@ -1,3 +1,4 @@
+ifeq ($(TARGET_QCOM_DISPLAY_VARIANT),caf-msm8992)
 ifeq ($(call is-board-platform-in-list, thulium),true)
     TARGET_USES_SDE = true
 else
@@ -18,5 +19,6 @@ ifeq ($(call is-vendor-board-platform,QCOM),true)
 else
 ifneq ($(filter msm% apq%,$(TARGET_BOARD_PLATFORM)),)
     include $(call all-named-subdir-makefiles,$(display-hals))
+endif
 endif
 endif

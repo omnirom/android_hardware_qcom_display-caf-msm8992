@@ -40,7 +40,7 @@ ifeq ($(TARGET_USES_QCOM_BSP),true)
     common_includes += vendor/qcom/opensource/display-frameworks/include
 endif
 
-ifeq ($(TARGET_COMPILE_WITH_MSM_KERNEL),true)
+ifeq ($(call is-vendor-board-platform,QCOM),true)
 # This check is to pick the kernel headers from the right location.
 # If the macro above is defined, we make the assumption that we have the kernel
 # available in the build tree.

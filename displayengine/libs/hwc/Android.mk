@@ -4,10 +4,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE                  := hwcomposer.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_RELATIVE_PATH    := hw
 LOCAL_MODULE_TAGS             := optional
-LOCAL_C_INCLUDES              := hardware/qcom/display/displayengine/include/ \
-                                 hardware/qcom/display/libgralloc/ \
-                                 hardware/qcom/display/libqservice/ \
-                                 hardware/qcom/display/libqdutils/
+LOCAL_C_INCLUDES              := hardware/qcom/display-caf-msm8992/displayengine/include/ \
+                                 hardware/qcom/display-caf-msm8992/libgralloc/ \
+                                 hardware/qcom/display-caf-msm8992/libqservice/ \
+                                 hardware/qcom/display-caf-msm8992/libqdutils/
 LOCAL_CFLAGS                  := -Wno-missing-field-initializers -Wno-unused-parameter \
                                  -Wconversion -Wall -Werror \
                                  -DLOG_TAG=\"SDE\"

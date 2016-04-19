@@ -7,7 +7,7 @@ common_includes += $(LOCAL_PATH)/../libhwcomposer
 common_includes += $(LOCAL_PATH)/../libhdmi
 common_includes += $(LOCAL_PATH)/../libqservice
 
-common_header_export_path := qcom/display
+common_header_export_path := qcom/display-caf-msm8992
 
 #Common libraries external to display HAL
 common_libs := liblog libutils libcutils libhardware

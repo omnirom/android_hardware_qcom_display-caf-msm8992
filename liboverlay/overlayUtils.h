@@ -213,7 +213,7 @@ enum eRotDownscale {
 /*
  * Various mdp flags like PIPE SHARE, DEINTERLACE etc...
  * kernel/common/linux/msm_mdp.h
- * INTERLACE_MASK: hardware/qcom/display/libgralloc/badger/fb_priv.h
+ * INTERLACE_MASK: hardware/qcom/display-caf-msm8992/libgralloc/badger/fb_priv.h
  * */
 enum eMdpFlags {
     OV_MDP_FLAGS_NONE = 0,

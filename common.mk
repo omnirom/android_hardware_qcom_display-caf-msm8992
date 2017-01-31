@@ -30,6 +30,8 @@ ifeq ($(call is-board-platform-in-list, $(MSM_VIDC_TARGET_LIST)), true)
     common_flags += -DMDSS_TARGET
 endif
 
+common_flags += -D__STDC_FORMAT_MACROS
+
 common_deps  :=
 kernel_includes :=
 
